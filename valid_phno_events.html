@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <form>
+            enter employee name:
+            <input type="text" id="t1" onblur="check1()">
+            enter ph.no:
+            <input type="number" id="t2" onblur="check2()">
+            <input type="button"value="login" onblur="show()">
+        </form>
+    </body>
+</html>
+<script>
+    function check1()
+    {
+        var eu=document.getElementById("t1").value;
+        if(eu=="")
+        {
+        alert("put the employee name");
+         }
+}
+    function check2()
+    {
+        var ph=document.getElementById("t2").value;
+        if(ph=="")
+        {
+            alert("put the ph no");
+        }
+    }
+    function show()
+    {
+        var eu=document.getElementById("t1").value;
+        var ph=document.getElementById("t2").value;
+        if(eu=="Aditya"&&ph=="9322376195")
+        {
+           alert("login successfully");
+        }
+        else{
+             alert("invalid name or ph no");
+        }
+    }
+    
+</script>

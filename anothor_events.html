@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <form>
+            enter username:
+            <input type="text" id="t1" onblur="check1()"><br>
+            enter password:
+            <input type="text" id="t2" onblur="check2()"><br>
+             <input type="button" value="login" onclick="show()">
+        </form>
+    </body>
+</html>
+<script>
+    function check1()
+    {
+        var u=document.getElementById("t1").value;
+        if(u=="")
+        {
+            alert("must enter username");
+        }
+    }
+    function check2()
+    {
+        var p=document.getElementById("t2").value;
+        if(p=="")
+        {
+            alert("must enter password");
+        }
+    }
+    function show()
+    {
+        var u=document.getElementById("t1").value;
+        var p=document.getElementById("t2").value;
+        if(u=="rsmdp"&&p=="1231231231")
+        alert("login successfully");
+        else
+        alert("invalid login or password");
+    }
+</script>

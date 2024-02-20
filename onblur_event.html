@@ -1,0 +1,34 @@
+<html>
+<body>
+    <form>
+        enter name:
+        <input type="text" id="t1" onblur="check1()" onclick="show()" onmouseover="show1()"><br>
+    </form>
+</body>
+</html>
+<script>
+    function check1()
+    {
+        var u=document.getElementById("t1").value;
+        if(u=="")
+        {
+        alert("It's seems like..you did'nt enter username");
+    }
+}
+     function show()
+    {
+        var u=document.getElementById("t1").value;
+        if(u!="")
+        {
+            document.write("<font color='red' size='18'>"+u);
+        }
+    }
+    function show1()
+    {
+        var u=document.getElementById("t1").value;
+        if(u=="")
+        {
+            document.write("<img src='19.JPG'>");
+        }
+    }
+</script>

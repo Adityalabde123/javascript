@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <form>
+            <input type="button" value="ok" onclick="show()">
+        </form>
+    </body>
+</html>
+<script>
+    function show()
+    {
+         flag=confirm("are you sure");
+         if(flag==true)
+         {
+            num=prompt("enter number");
+            n=parseInt(num);
+            if(n%2==0)
+            {
+                alert("number is even");
+            }
+            else{
+                alert("number is odd ");
+            }
+         }
+    }
+</script>

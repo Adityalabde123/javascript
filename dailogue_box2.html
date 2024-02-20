@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>Exam's are near,have you started preapering for?</h1>
+        <input type="button" value="ok" onclick="show()">
+    </body>
+</html>                               
+<script>
+    function show()
+    {
+        flag=confirm("are you sure");
+        if(flag==true)
+        {
+            num=prompt("are you in 12th");
+            n=parseInt(num);
+            if(n=='12')
+            {
+                alert("exam's are near...hurry up!!");
+            }
+            else{
+                alert("let's take a break");
+            }
+        }
+    }
+</script>

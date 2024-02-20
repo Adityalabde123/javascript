@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <form>
+            enter no:
+            <input type="number" id="t1">
+            <input type="submit"value="ok" onclick="check_num()">
+        </form>
+    </body>
+</html>
+<script>
+    function check_num()
+    {
+        var n=document.getElementById("t1").value;
+        n=parseInt(n);
+        for(i=1;i<=10;i++)
+        {
+            document.write("<br>table="+i*n);
+        }
+    }
+</script>

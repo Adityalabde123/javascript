@@ -1,0 +1,53 @@
+<html>
+    <body>
+        <form>
+            enter patient name:
+            <input type="text" id="t1" onblur="check1()"><br>
+            enter patient address:
+            <input type="text" id="t2" onblur="check2()"><br>
+            enter patient contact:
+            <input type="text" id="t3" onblur="check3()"><br>
+            <input type="button" value="ok" onclick="show()"><br>
+        </form>
+    </body>
+</html>
+<script>
+    function check1()
+    {
+        var ename=document.getElementById("t1").value;
+        if(ename=="")
+        {
+            alert("must enter patient name");
+        }
+    }
+    function check2()
+    {
+        var address=document.getElementById("t2").value;
+        if(address=="")
+        {
+            alert("must enter patient address");
+        }
+    }
+    function check3()
+    {
+        var con=document.getElementById("t3").value;
+        if(con=="")
+        {
+            alert("must enter contact number");
+        }
+    }
+    function show()
+    {
+        var ename=document.getElementById("t1").value;
+        var address=document.getElementById("t2").value;
+        var con=document.getElementById("t3").value;
+        if(ename=="Aditya"&&address=="shrirampur"&&con=="9322376195")
+        {
+            alert("login successfully");
+
+        }
+        else{
+            alert("invalid username or password");
+        }
+    }
+</script>
