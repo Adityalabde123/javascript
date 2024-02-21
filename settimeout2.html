@@ -1,0 +1,19 @@
+<html>
+<body onload="show()">
+   <form>
+   <img id="img1" width="500" height="500">
+   </form>
+</body>
+</html>
+<script>
+var i=0;
+ var a=Array("im1","im2","im3");
+ function show()
+{
+  document.getElementById("img1").src=a[i]+".jpg";
+  i++;
+  if(i==3)
+  i=0;
+  setTimeout(show,1000);
+}
+</script>  

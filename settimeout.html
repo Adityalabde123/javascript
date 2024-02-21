@@ -1,0 +1,26 @@
+<html>
+<body onload="show()">
+<form>
+   <input type="text" id="t1">
+    </form>
+</body>
+</html>
+<script>
+function show()
+{
+   var d1=new Date();
+   var dd=d1.getDate();
+   var mm=d1.getMonth()+1;
+   var yy=d1.getYear()+1900;
+   var s1=dd+"/"+mm+"/"+yy;
+
+   var h=d1.getHours();
+   var m=d1.getMinutes();
+   var s=d1.getSeconds();
+   var s2=h+":"+m+":"+s;
+  
+   document.getElementById("t1").value=s1+" "+s2;
+   setTimeout(show,1000); 
+}
+</script>
+
