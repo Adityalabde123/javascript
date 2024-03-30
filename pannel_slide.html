@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+         <script>
+            $(document).ready(function(){
+               $("#flip").click(function(){
+                $("#panel").slideToggle(1000);
+               });
+            });
+         </script>
+    </head>
+<body>
+    <style>
+#panel,#flip{
+    padding:5px;
+    text-align: center;
+    background-color: beige;
+    border: solid 1px beige;
+}
+#panel{
+    padding: 50px;
+    display: none;
+}
+</style>
+</body>
+</head>
+<body>
+    <div id="flip">Shree krishna travel's</div>
+    <div id="panel">Hello tourist</div>
+
+    <div id="flip">OFFER's</div>
+    <div id="panel">70 to 80% OFF</div>
+
+    <div id="flip">BENNIFITS</div>
+    <div id="panel">HEAVY DISCOUNT</div>
+
+</body>
+</html>
